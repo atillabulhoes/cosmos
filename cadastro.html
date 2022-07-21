@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+ 
+
+    <title>Devops</title>
+
+      <!-- Arquivos CSS bootstrap da pagina -->
+    <link href="/css/cover.css" rel="stylesheet">
+
+    <link href="/css/form.css" rel="stylesheet">
+    <link href="/css/min.css" rel="stylesheet">
+
+    <style>
+   
+    .btn {
+        width: 100%;
+         }
+
+     
+    </style>
+ 
+   
+
+ <body class="d-flex h-50 text-center text-white bg-dark">
+    
+ <div class="cover-container-body d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Devops </h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="/index.html">Front-End</a>
+          <a class="nav-link fw-bold py-1 px-0" href="/backend.html">Back-End</a>
+          <a class="nav-link fw-bold py-1 px-0" href="/drop.html">Excluir</a>
+          <a class="nav-link fw-bold py-1 px-0" href="/cadastro.html">Cadastro</a>
+          
+        </nav>
+      </div>
+    </header>
+      
+  
+  
+   
+
+     <div class="container">
+       <div class="py-5 text-center">
+        
+        <h2>Cadastro de Clientes</h2>  
+      </div>
+     
+        <div class="col-md-8 offset-md-2">
+          <h4 class="mb-3">Informe os dados do cliente abaixo:</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="primeiroNome">Razão Social</label>
+                <input type="text" class="form-control" id="razaosocial" placeholder="Razão Social" value="" required>
+                <div class="invalid-feedback">
+                  É obrigatório inserir um nome válido.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="sobrenome">Nome Fantasia</label>
+                <input type="text" class="form-control" id="fantasia" placeholder="Fantasia" value="" required>
+                <div class="invalid-feedback">
+                  É obrigatório inserir um sobre nome válido.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="loja">CNPJ</label>
+              <input type="text" class="form-control" id="cnpj" placeholder="00.000.000/0001-00" required>
+              <div class="invalid-feedback">
+                Por favor, insira o nome do seu estabelecimento.
+              </div>
+            </div>
+
+        
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="usuario@empresa.com.br">
+              <div class="invalid-feedback">
+                Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+              </div>
+            </div>
+
+           
+
+           
+
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cep">IP Publico</label>
+                <input type="text" class="form-control" maxlength="9" id="ipexterno" placeholder="10.0.0.0" required>
+                <div class="invalid-feedback">
+                  É obrigatório inserir um IP válido.
+                </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label for="uf">Ip Servidor</label>
+                <input type="text" class="form-control" maxlength="2" id="iplocal" placeholder="192.168.0.1" required>
+                <div class="invalid-feedback">
+                
+                </div>
+                <div class="invalid-feedback">
+                  É obrigatório inserir um DNS.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="cidade">DNS</label>
+                <input type="text" class="form-control" id="dns" placeholder="www.empresa.com.br" required>
+                <div class="invalid-feedback">
+                  
+                </div>
+                <div class="invalid-feedback">
+                  Por favor, insira um cidade válido.
+                </div>
+              </div>
+              
+            </div>
+
+         
+            <div class="mb-3">
+              <label for="endereco">Usuário <span class="text-muted"></span></label>
+              <input type="text" class="form-control" id="user" placeholder="admin">
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="bairro">porta</label>
+                <input type="text" class="form-control" id="bairro" placeholder="22" value="" required>
+                <div class="invalid-feedback">
+                  É obrigatório inserir um nome válido.
+                </div>
+              </div>
+      
+              <div class="col-md-6 mb-3">
+                <label for="numero">senha</label>
+                <input type="password" class="form-control" id="senha" name="senha"   minlength="8" placeholder="********" value="" required>
+                <div class="invalid-feedback">
+                  É obrigatório inserir um sobre nome válido.
+                </div>
+              </div>
+            </div>
+          
+
+
+             <!-- Confirmação de termos -->
+
+          
+     
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block"  type="submit">Confirme o Cadastro</button>
+       
+          </form>
+        </div>
+      </div>
+    
+
+      <footer class="my-5 pt-5 text-muted text-center text-small text-white-50">
+        
+        <p>Desenvolvido por alguem.</p>
+      </footer>
+    </div>
+    
+
+           <!-- Arquivos JS bootstrap da pagina -->
+          
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+  
+    <script>
+      // Exemplo de JavaScript para desativar o envio do formulário, se tiver algum campo inválido.
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          
+          // Selecione todos os campos que nós queremos aplicar estilos Bootstrap de validação customizados.
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Faz um loop neles e previne envio
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  
+  </body>
+</html>
